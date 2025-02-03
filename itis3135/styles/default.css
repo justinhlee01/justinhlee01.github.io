@@ -36,3 +36,9 @@ figure {
 li {
     text-align: left;
 }
+
+nav {
+    font-size: 1.5rem;
+    background-color: white;
+    padding: 2rem;
+}
