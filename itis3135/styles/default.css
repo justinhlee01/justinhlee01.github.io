@@ -1,0 +1,38 @@
+body {
+    background-color: #3264a8;
+    text-align: center;
+    color: lightgray;
+    font-family: sans-serif;
+}
+
+a {
+    color: #999999;
+    text-decoration: none;
+}
+
+a:hover {
+    color:blue;
+}
+
+main {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    width: 30%;
+}
+
+figure {
+    text-align: center;
+    font-style: italic;
+}
+
+li {
+    text-align: left;
+}
