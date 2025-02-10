@@ -1,12 +1,12 @@
 body {
     background-color: #3264a8;
     text-align: center;
-    color: lightgray;
+    color: #ffffff;
     font-family: sans-serif;
 }
 
 a {
-    color: #999999;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -39,6 +39,6 @@ li {
 
 footer nav {
     font-size: 1.5rem;
-    background-color: lightgray;
+    background-color: #ffffff;
     padding: 1.5rem;
 }
