@@ -1,0 +1,30 @@
+body {
+    font-family: Times, serif;
+    background-color: white;
+    color: black;
+    margin: 50px;
+}
+h2 {
+    font-family: Papyrus, fantasy;
+}
+h1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+p {
+    text-align: center;
+    font-size: 50px;
+    background-color: yellow;
+    margin-left: 10px;
+    margin-right: 100px;
+}
+.centered-list {
+    text-align: center;
+}
+.ugly-border {
+    border: 10px dashed red;
+    border-right-style: solid;
+    padding: 20px;
+}
+.underlined {
+    text-decoration: underline;
+}
