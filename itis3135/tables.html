@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables Assignment - Jagged Lizard Bikes</title>
+    <link rel="stylesheet" href="styles/default.css" />
+  </head>
+  <body>
+    <header>
+      <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+      <h2>HTML Tables Assignment</h2>
+
+      <h3>My Tabular Data</h3>
+      <ol>
+        <li>Lisa Reptor - lreptor@jaggedlizard.com - 10</li>
+        <li>Jake Tailwind - jtailwind@gmail.com - 5</li>
+        <li>Tom Gear - tomgear@yahoo.com - 3</li>
+        <li>Emma Sharp - emma.sharp@bikes.co - 7</li>
+        <li>Larry Spoke - lspoke@lizardmail.com - 12</li>
+        <li>Ava Crank - ava.crank@yahoo.com - 8</li>
+        <li>Max Breaker - maxbreaker@bikemail.net - 6</li>
+        <li>Nia Chain - nia.chain@fixie.org - 4</li>
+      </ol>
+
+      <h3>Employee Data in Simple Table</h3>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Years of Service</th>
+        </tr>
+        <tr>
+          <td>Lisa Reptor</td>
+          <td>lreptor@jaggedlizard.com</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Jake Tailwind</td>
+          <td>jtailwind@gmail.com</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Tom Gear</td>
+          <td>tomgear@yahoo.com</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Emma Sharp</td>
+          <td>emma.sharp@bikes.co</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>Larry Spoke</td>
+          <td>lspoke@lizardmail.com</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>Ava Crank</td>
+          <td>ava.crank@yahoo.com</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Max Breaker</td>
+          <td>maxbreaker@bikemail.net</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>Nia Chain</td>
+          <td>nia.chain@fixie.org</td>
+          <td>4</td>
+        </tr>
+      </table>
+
+      <h3>Employee Data in Complex Table</h3>
+      <figure>
+        <figcaption>Employee Information</figcaption>
+        <table>
+          <thead>
+            <tr>
+              <th>Department</th>
+              <th id="name">Name</th>
+              <th id="email">Email</th>
+              <th id="years">Years of Service</th>
+              <th id="salary">Monthly Salary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2">Marketing</td>
+              <td headers="name">Lisa Reptor</td>
+              <td headers="email">lreptor@jaggedlizard.com</td>
+              <td headers="years">10</td>
+              <td headers="salary">$5000</td>
+            </tr>
+            <tr>
+              <td headers="name">Jake Tailwind</td>
+              <td headers="email">jtailwind@gmail.com</td>
+              <td headers="years">5</td>
+              <td headers="salary">$4200</td>
+            </tr>
+            <tr>
+              <td rowspan="3">Tech</td>
+              <td headers="name">Tom Gear</td>
+              <td headers="email">tomgear@yahoo.com</td>
+              <td headers="years">3</td>
+              <td headers="salary">$4600</td>
+            </tr>
+            <tr>
+              <td headers="name">Emma Sharp</td>
+              <td headers="email">emma.sharp@bikes.co</td>
+              <td headers="years">7</td>
+              <td headers="salary">$4800</td>
+            </tr>
+            <tr>
+              <td headers="name">Larry Spoke</td>
+              <td headers="email">lspoke@lizardmail.com</td>
+              <td headers="years">12</td>
+              <td headers="salary">$5100</td>
+            </tr>
+            <tr>
+              <td rowspan="3">Sales</td>
+              <td headers="name">Ava Crank</td>
+              <td headers="email">ava.crank@yahoo.com</td>
+              <td headers="years">8</td>
+              <td headers="salary">$4700</td>
+            </tr>
+            <tr>
+              <td headers="name">Max Breaker</td>
+              <td headers="email">maxbreaker@bikemail.net</td>
+              <td headers="years">6</td>
+              <td headers="salary">$4600</td>
+            </tr>
+            <tr>
+              <td headers="name">Nia Chain</td>
+              <td headers="email">nia.chain@fixie.org</td>
+              <td headers="years">4</td>
+              <td headers="salary">$4500</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th colspan="3">Total Years of Service</th>
+              <td>55</td>
+              <td>$37500</td>
+            </tr>
+          </tfoot>
+        </table>
+      </figure>
+    </main>
+
+    <footer>
+      <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script src="scripts/HTMLInclude.min.js"></script>
+  </body>
+</html>
+  

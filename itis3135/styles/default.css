@@ -79,3 +79,28 @@ footer nav {
         width: 80%;
     }
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #444;
+    text-align: left;
+  }
+  
+  thead tr {
+    background-color: #333;
+    color: white;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f0f0f0;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
