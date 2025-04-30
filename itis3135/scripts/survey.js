@@ -1,6 +1,7 @@
-document.getElementById("introForm").addEventListener("submit", function (e) {
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("introForm").addEventListener("submit", function (e) {
     e.preventDefault();
-  
+
     const name = document.getElementById("name").value;
     const mascot = document.getElementById("mascot").value;
     const image = document.getElementById("image").files[0];
@@ -12,23 +13,23 @@ document.getElementById("introForm").addEventListener("submit", function (e) {
     const platform = document.getElementById("platform").value;
     const funny = document.getElementById("funny").value;
     const anything = document.getElementById("anything").value;
-  
+
     const courses = Array.from(document.querySelectorAll(".courseInput")).map(input => input.value);
-  
+
     const reader = new FileReader();
     reader.onload = function (event) {
       const imgUrl = event.target.result;
-  
+
       let courseList = "";
       for (const course of courses) {
         if (course.trim()) courseList += `<li>${course}</li>`;
       }
-  
+
       const resultHTML = `
         <h2>Introduction</h2>
         <h3>${name} || ${mascot}</h3>
         <figure>
-          <img src="${imgUrl}" alt="${caption}" style="width:200px;"><figcaption>${caption}</figcaption>
+          <img src="${imgUrl}" alt="${caption}"><figcaption>${caption}</figcaption>
         </figure>
         <ul>
           <li><strong>Personal Background:</strong> ${personal}</li>
@@ -44,31 +45,33 @@ document.getElementById("introForm").addEventListener("submit", function (e) {
         </ul>
         <button onclick="location.reload()">Reset</button>
       `;
-  
-      document.getElementById("introForm").style.display = "none";
+
+      document.getElementById("formSection").style.display = "none";
       document.getElementById("result").innerHTML = resultHTML;
     };
-  
+
     reader.readAsDataURL(image);
   });
-  
-  function addCourse() {
+
+  window.addCourse = function () {
     const container = document.getElementById("coursesContainer");
+
+    const wrapper = document.createElement("div");
+
     const input = document.createElement("input");
     input.type = "text";
     input.className = "courseInput";
     input.placeholder = "Enter course";
-  
+
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
     deleteBtn.type = "button";
     deleteBtn.onclick = function () {
       container.removeChild(wrapper);
     };
-  
-    const wrapper = document.createElement("div");
+
     wrapper.appendChild(input);
     wrapper.appendChild(deleteBtn);
     container.appendChild(wrapper);
-  }
-  
+  };
+});
