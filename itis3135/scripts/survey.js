@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const funny = document.getElementById("funny").value;
     const anything = document.getElementById("anything").value;
 
-    const courses = Array.from(document.querySelectorAll(".courseInput")).map(input => input.value);
+    const courses = Array.from(document.querySelectorAll(".courseInput")).map((input) => input.value);
 
     const reader = new FileReader();
     reader.onload = function (event) {
