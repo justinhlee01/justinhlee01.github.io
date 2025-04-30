@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jagged Lizard Bikes - Interest Form</title>
+  <link rel="stylesheet" href="styles/default.css" />
+</head>
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <h2>Jagged Lizard Bikes - Join the Ride</h2>
+    <p>Fill out this form to get custom bike recommendations, event invites, and gear updates!</p>
+
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your name" size="40"><br><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required placeholder="123-456-7890" size="30"><br><br>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required placeholder="you@example.com" size="40"><br><br>
+
+      <fieldset>
+        <legend>Which accessories are you interested in?</legend>
+        <label><input type="checkbox" name="accessories" value="helmet"> Helmet</label><br>
+        <label><input type="checkbox" name="accessories" value="lights"> Lights</label><br>
+        <label><input type="checkbox" name="accessories" value="rack"> Bike Rack</label><br>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>What kind of bike are you looking for?</legend>
+        <label><input type="radio" name="bikeType" value="fixie" required> Fixie</label><br>
+        <label><input type="radio" name="bikeType" value="road" required> Road Bike</label><br>
+        <label><input type="radio" name="bikeType" value="electric" required> Electric Bike</label><br>
+      </fieldset><br>
+
+      <label for="experience">Your Riding Experience:</label>
+      <select id="experience" name="experience" required>
+        <option value="">--Select Experience Level--</option>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="pro">Pro Cyclist</option>
+      </select><br><br>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+
+  <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
