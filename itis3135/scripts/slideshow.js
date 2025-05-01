@@ -1,13 +1,5 @@
 let slideIndex = 1;
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
 function showSlides(n) {
   const slides = document.getElementsByClassName("mySlides");
   const dots = document.getElementsByClassName("demo");
@@ -27,6 +19,14 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].classList.add("active");
   captionText.innerText = dots[slideIndex - 1].alt;
+}
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
 
 showSlides(slideIndex);
