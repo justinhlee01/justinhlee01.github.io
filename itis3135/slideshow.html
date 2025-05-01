@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slideshow Gallery - Justin Lee</title>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles/default.css" />
+  <link rel="stylesheet" href="styles/slideshow.css" />
+</head>
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <h2>Slideshow Gallery - Justin Lee</h2>
+    <p>Each image represents a letter in my full name. Click thumbnails or arrows to navigate.</p>
+
+    <div class="container">
+      <!-- Slides -->
+      <div class="mySlides"><div class="numbertext">1 / 9</div><img src="images/ss_jelly.png" alt="J - Jelly" /></div>
+      <div class="mySlides"><div class="numbertext">2 / 9</div><img src="images/ss_umbrella.png" alt="U - Umbrella" /></div>
+      <div class="mySlides"><div class="numbertext">3 / 9</div><img src="images/ss_sneakers.png" alt="S - Sneakers" /></div>
+      <div class="mySlides"><div class="numbertext">4 / 9</div><img src="images/ss_turtle.png" alt="T - Turtle" /></div>
+      <div class="mySlides"><div class="numbertext">5 / 9</div><img src="images/ss_icecream.png" alt="I - Ice Cream" /></div>
+      <div class="mySlides"><div class="numbertext">6 / 9</div><img src="images/ss_notebook.png" alt="N - Notebook" /></div>
+      <div class="mySlides"><div class="numbertext">7 / 9</div><img src="images/ss_laptop.png" alt="L - Laptop" /></div>
+      <div class="mySlides"><div class="numbertext">8 / 9</div><img src="images/ss_egg.png" alt="E - Egg" /></div>
+      <div class="mySlides"><div class="numbertext">9 / 9</div><img src="images/ss_envelope.png" alt="E - Envelope" /></div>
+
+      <!-- Navigation -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Caption -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnails -->
+      <div class="row">
+        <div class="column"><img class="demo cursor" src="images/ss_jelly.png" onclick="currentSlide(1)" alt="J - Jelly"></div>
+        <div class="column"><img class="demo cursor" src="images/ss_umbrella.png" onclick="currentSlide(2)" alt="U - Umbrella"></div>
+        <div class="column"><img class="demo cursor" src="images/ss_sneakers.png" onclick="currentSlide(3)" alt="S - Sneakers"></div>
+        <div class="column"><img class="demo cursor" src="images/ss_turtle.png" onclick="currentSlide(4)" alt="T - Turtle"></div>
+        <div class="column"><img class="demo cursor" src="images/ss_icecream.png" onclick="currentSlide(5)" alt="I - Ice Cream"></div>
+        <div class="column"><img class="demo cursor" src="images/ss_notebook.png" onclick="currentSlide(6)" alt="N - Notebook"></div>
+        <div class="column"><img class="demo cursor" src="images/ss_laptop.png" onclick="currentSlide(7)" alt="L - Laptop"></div>
+        <div class="column"><img class="demo cursor" src="images/ss_egg.png" onclick="currentSlide(8)" alt="E - Egg"></div>
+        <div class="column"><img class="demo cursor" src="images/ss_envelope.png" onclick="currentSlide(9)" alt="E - Envelope"></div>
+      </div>
+    </div>
+
+    <h3>AI Prompts Used</h3>
+    <ul>
+      <li>J - Picture of Jelly</li>
+      <li>U - Picture of Umbrella</li>
+      <li>S - Picture of Sneaker</li>
+      <li>T - Picture of Turtle</li>
+      <li>I - Picture of Ice Cream</li>
+      <li>N - Picture of Notebook</li>
+      <li>L - Picture of Laptop</li>
+      <li>E - Picture of Egg</li>
+      <li>E - Picture of Envelope</li>
+    </ul>
+    <p><strong>Generated with:</strong> Grok</p>
+
+    <h3>Notes</h3>
+    <p>
+      Code built using W3Schools Slideshow Gallery example.<br />
+      Images AI-generated. Script adapted manually.<br />
+      This is my own work. No code was copied directly.<br />
+      Signed, Justin Lee
+    </p>
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+
+  <script src="scripts/HTMLInclude.min.js"></script>
+  <script src="scripts/slideshow.js"></script>
+</body>
+</html>
