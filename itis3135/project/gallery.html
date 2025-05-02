@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <title>KASA | Gallery</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>UNCC Korean American Student Association (KASA)</h1>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="join.html">Join Us</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2 class="center-text">Event Gallery</h2>
+    <div class="slideshow-container">
+      <div class="slide fade"><img src="images/ke1.png" alt="Gallery 1" /></div>
+      <div class="slide fade"><img src="images/ke2.png" alt="Gallery 2" /></div>
+      <div class="slide fade"><img src="images/ke3.png" alt="Gallery 3" /></div>
+      <div class="slide fade"><img src="images/ke4.png" alt="Gallery 4" /></div>
+      <div class="slide fade"><img src="images/ke5.png" alt="Gallery 5" /></div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="thumbnail-row">
+      <img class="thumb cursor" src="images/ke1.png" onclick="currentSlide(1)" alt="Thumb 1" />
+      <img class="thumb cursor" src="images/ke2.png" onclick="currentSlide(2)" alt="Thumb 2" />
+      <img class="thumb cursor" src="images/ke3.png" onclick="currentSlide(3)" alt="Thumb 3" />
+      <img class="thumb cursor" src="images/ke4.png" onclick="currentSlide(4)" alt="Thumb 4" />
+      <img class="thumb cursor" src="images/ke5.png" onclick="currentSlide(5)" alt="Thumb 5" />
+    </div>
+  </main>
+
+  <footer>
+    <p><i>Page Built by <a href="justinwebsolutions.com">Justin Web Solution </a></i>  &copy;2025 All Rights Reserved.</p>
+  </footer>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
